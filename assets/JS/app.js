@@ -1,5 +1,6 @@
 /*get the number of characters*/
 let charLength;
+
 function characterlen() {
     charLength = document.getElementById('length').value;
     document.getElementById('result').innerHTML = charLength;
@@ -27,36 +28,31 @@ const clicktbtn = document.getElementById("btn");
 
 clicktbtn.addEventListener("click", e => {
 
-
-
-
-
-    let ok=  document.getElementById("password__result")
     // let result = document.getElementById("password__result");
     const upperCasebtn = document.getElementById("uppercase").checked;
     const lowerCasebtn = document.getElementById("lowercase").checked;
     const numbersCasebtn = document.getElementById("numbers").checked;
     const symbolCasebtn = document.getElementById("symbols").checked;
 
-console.log(upperCasebtn);
+    // console.log(upperCasebtn);
     let passwordLength = charLength;
 
     let password = "";
 
     if (upperCasebtn == true) {
-        password+="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        password += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     }
     if (lowerCasebtn == true) {
-        password+="abcdefghijklmnopqrstuvwxyz";
+        password += "abcdefghijklmnopqrstuvwxyz";
 
     }
     if (numbersCasebtn == true) {
-        password+="1234567890";
+        password += "1234567890";
 
     }
     if (symbolCasebtn == true) {
-        password+="!@#$%^&*()";
+        password += "!@#$%^&*()";
 
     }
 
@@ -66,10 +62,10 @@ console.log(upperCasebtn);
     for (let i = 0; i < passwordLength; i++) {
         const pass_generator = Math.floor(Math.random() * password.length);
         output += password[pass_generator];
-      ok.value = output;
+        document.getElementById("password__result").value = output;
     }
 
 
 
-    console.log(output);
+    // console.log(output);
 });
