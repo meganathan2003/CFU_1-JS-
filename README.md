@@ -69,6 +69,9 @@ As mentioned above, there are many ways to host your project for free. Our recom
 
 - [GitHub Pages](https://pages.github.com/)
 
+
+MY WEBSITE SERVER = https://meganathan2003.github.io/CFU_1-JS-/
+
 You can host your site using the above solutions or any other trusted providers.
 
 ## Submitting your solution
